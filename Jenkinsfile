@@ -6,7 +6,7 @@ pipeline{
                 sh 'terraform init'
             }
         }
-        stages('format'){
+        stage('format'){
             steps{
                 sh'terraform fmt'
             }
